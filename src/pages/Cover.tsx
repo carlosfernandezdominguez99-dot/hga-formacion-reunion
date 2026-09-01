@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import logo from "@/assets/logo_grande_1388x600.png";
 
 interface CoverProps {
   date: string;
@@ -18,10 +19,13 @@ export default function Cover({
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-ink-50 px-6 py-16">
       <div className="w-full max-w-xl animate-fadeUp text-center">
-        <div className="mx-auto mb-10 flex h-20 w-20 items-center justify-center rounded-2xl border border-ink-150 bg-white shadow-card">
-          {/* Espacio para el logo de HGA Formación */}
-          <span className="font-display text-2xl text-ink-950">HGA</span>
-        </div>
+           <div className="mx-auto mb-10">
+     <img
+       src={logo}
+       alt="HGA Formación"
+       className="mx-auto h-16 w-auto sm:h-20"
+     />
+   </div>
 
         <h1 className="font-display text-4xl text-ink-950 sm:text-5xl">HGA Formación</h1>
         <p className="mt-3 text-[1.05rem] uppercase tracking-widest2 text-accent-600">
